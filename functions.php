@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo 判断传入数据是否在数据库中已经存在
+ * @todo 判断传入数据是否在数据库中已经存 在
  * @author Pleid
  * @time 2019-7-27
  * @param $judgeData  传入数据
