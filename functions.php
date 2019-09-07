@@ -6,7 +6,7 @@
  * @time 2019-7-27
  * @param $judgeData  传入数据
  * @param $table 需要判断的数据表
- * @param $field 判断的数据字段
+ * @param $field 判断的数据字
  * @RETURN 返回不存在的数据
  */
 public function getDataExist($judgeData,$table,$field){
