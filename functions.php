@@ -79,3 +79,29 @@ function logTxt($data)
     fwrite($fp, $data . "\r\n");//写入文件
     fclose($fp);//关闭资源通道
 }
+
+/**
+     * excel对应列:对应值
+     */
+    public function excelValue($judgeConf)
+    {
+        $judgeConf = trim($judgeConf);
+
+        if(!$judgeConf){
+            return 999;
+        }
+
+        for ($i = 0; $i <= 26 * 26; $i++) {
+            $y = ($i / 26);
+            if ($y >= 1) {
+                $y = intval($y);
+                if($judgeConf == chr($y + 64).chr($i - $y * 26 + 65)){
+                    return $i;
+                }
+            } else {
+                if($judgeConf == chr($i + 65)){
+                    return $i;
+                }
+            }
+        }
+    }
